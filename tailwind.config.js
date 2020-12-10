@@ -13,6 +13,7 @@ module.exports = {
 			},
 			backgroundColor: {
 				lightBlue: "rgba(19,68,115,0.1)",
+				primary: "#0b2640",
 			},
 			maxWidth: {
 				90: "90%",

@@ -5,4 +5,16 @@
 	p {
 		@apply pb-2 leading-snug;
 	}
+	h1 {
+		@apply font-merriweather text-2xl font-semibold;
+	}
+	h2 {
+		@apply font-merriweather text-xl font-semibold;
+	}
+	h3 {
+		@apply uppercase font-bold text-sm tracking-wider;
+	}
+	.whiteButton {
+		@apply transition duration-150 py-2 px-4 bg-white hover:bg-primary hover:text-white text-primary uppercase tracking-wider  font-montserrat font-semibold;
+	}
 }

@@ -20,7 +20,7 @@ export default function Header() {
 								src="/logo.png"
 								height={40}
 								width={170}
-								className="object-contain"
+								className="object-contain object-left"
 								alt=""
 							/>
 						</a>
@@ -81,11 +81,11 @@ export default function Header() {
 			<div
 				className={
 					mobileMenuIsOpen
-						? "absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10"
-						: "absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden z-10"
+						? "absolute top-0 inset-x-0 transition transform origin-top-right md:hidden z-10"
+						: "absolute top-0 inset-x-0 transition transform origin-top-right hidden z-10"
 				}
 			>
-				<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+				<div className=" shadow-md ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 					<div className="pt-5 pb-6 px-5">
 						<div className="flex items-center justify-between">
 							<div>
