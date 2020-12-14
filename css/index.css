@@ -6,10 +6,10 @@
 		@apply pb-2 leading-snug;
 	}
 	h1 {
-		@apply font-merriweather text-2xl font-semibold;
+		@apply font-merriweather text-3xl font-semibold;
 	}
 	h2 {
-		@apply font-merriweather text-xl font-semibold;
+		@apply font-merriweather text-xl md:text-2xl font-semibold;
 	}
 	h3 {
 		@apply uppercase font-bold text-sm tracking-wider;
@@ -17,4 +17,39 @@
 	.whiteButton {
 		@apply transition duration-150 py-2 px-4 bg-white hover:bg-primary hover:text-white text-primary uppercase tracking-wider  font-montserrat font-semibold;
 	}
+}
+
+.st0 {
+	fill: #0b2640;
+}
+
+.st1 {
+	opacity: 0.1;
+	fill: #134473;
+	enable-background: new;
+}
+
+.st2 {
+	fill: #0b2640;
+	enable-background: new;
+	pointer-events: all;
+	cursor: pointer;
+}
+
+.st3 {
+	opacity: 0.1;
+}
+
+.st4 {
+	fill: #134473;
+}
+
+.st5 {
+	fill: #134473;
+	stroke: #ffffff;
+	stroke-width: 1.5;
+}
+
+.st2:hover {
+	fill: #0b264060 !important;
 }

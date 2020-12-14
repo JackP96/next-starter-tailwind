@@ -10,8 +10,8 @@ export default function Header() {
 
 	return (
 		<div className="relative bg-white shadow-md">
-			<div className=" max-w-screen-xl mx-auto px-4 sm:px-6">
-				<div className="flex justify-between items-center border-gray-100 py-4 md:justify-start md:space-x-10">
+			<div className=" lg:max-w-screen-xl max-w-90 mx-auto md:px-0 sm:px-6">
+				<div className="flex  justify-between items-center text-primary hover:text-black border-gray-100 py-4 lg:justify-start lg:space-x-10">
 					<div className="flex justify-start lg:w-0 lg:flex-1">
 						<a href="#">
 							<span className="sr-only">Workflow</span>
@@ -26,11 +26,11 @@ export default function Header() {
 						</a>
 					</div>
 
-					<div className="-mr-2 -my-2 md:hidden">
+					<div className="-mr-2 -my-2 lg:hidden">
 						<button
 							onClick={toggleclassName}
 							type="button"
-							className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+							className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
 						>
 							<span className="sr-only">Open menu</span>
 
@@ -51,7 +51,7 @@ export default function Header() {
 							</svg>
 						</button>
 					</div>
-					<nav className="hidden md:flex space-x-16 font-montserrat">
+					<nav className="hidden lg:flex space-x-16 font-montserrat">
 						<a
 							href="#"
 							className="text-base font-bold text-gray-500 hover:text-gray-900"
@@ -64,7 +64,7 @@ export default function Header() {
 						>
 							Investment Opportunities
 						</a>
-						<Link href="projects">
+						<Link href="/projects">
 							<a className="text-base font-bold text-gray-500 hover:text-gray-900">
 								Our Projects
 							</a>
@@ -81,7 +81,7 @@ export default function Header() {
 			<div
 				className={
 					mobileMenuIsOpen
-						? "absolute top-0 inset-x-0 transition transform origin-top-right md:hidden z-10"
+						? "absolute top-0 transition transform origin-top-right w-48 right-0 h-screen lg:hidden z-10"
 						: "absolute top-0 inset-x-0 transition transform origin-top-right hidden z-10"
 				}
 			>
@@ -90,7 +90,7 @@ export default function Header() {
 						<div className="flex items-center justify-between">
 							<div>
 								<Link href="#">
-									<a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+									<a className="-m-3 p-3 flex items-center md:hidden rounded-md hover:bg-gray-50">
 										<img className="h-8 w-auto sm:h-10" src="logo.png" alt="" />
 									</a>
 								</Link>
@@ -171,10 +171,7 @@ export default function Header() {
 									</span>
 								</a>
 
-								<a
-									href="#"
-									className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-								>
+								<div className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
 									<svg
 										className="flex-shrink-0 h-6 w-6 text-indigo-600"
 										xmlns="http://www.w3.org/2000/svg"
@@ -190,10 +187,13 @@ export default function Header() {
 											d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
 										/>
 									</svg>
-									<span className="ml-3 text-base font-medium text-gray-900">
+									<Link
+										href="projects"
+										className="ml-3 text-base font-medium text-gray-900"
+									>
 										Our Projects
-									</span>
-								</a>
+									</Link>
+								</div>
 
 								<a
 									href="#"
